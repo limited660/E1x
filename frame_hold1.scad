@@ -7,7 +7,7 @@ translate([11.1,-1.4,-11.5])rotate([-90,0,0])
   difference() 
   {
     union() {
-      translate([18,-12,(100/2)])cube([51.3,2,100],center=true);
+      translate([15.60,-12,(104.2/2)])cube([56.2,2,104.2],center=true);
       translate([0,0,(100/2)])cube([25,25,100],center=true);
     }
     ext2020(l=100);
