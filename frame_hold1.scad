@@ -21,13 +21,21 @@ module base_plate() {
     }
   }
 }
-module corner_brace() {
+module corner_brace(nosupport=false) {
       difference() 
       {
         union() {
           translate([0,0,(100/2)])cube([25,25,100],center=true);
         }
         ext2020(l=100);
+        if (nosupport)
+        {
+          translate([0,0,100/2])
+
+            translate([-10+1.5,0,0])cube([3,6,100], center=true);
+            translate([10-1.5,0,0])cube([3,6,100], center=true);
+        }
+
         for (i = [30, 80]) 
           translate([0,0,i])rotate([0,-90,90])cylinder(r=2.5,h=30);
         for (i = [30, 80]) 
@@ -38,7 +46,7 @@ module corner_brace() {
         translate([10.6,2.5,120/2])cube([6,25,120],center=true);
       }
 }
-module frame_mount(corner_brace=false,enclosure=true) 
+module frame_mount(corner_brace=false,enclosure=true,nosupport=false) 
 {
   if(enclosure)
   {
@@ -70,12 +78,12 @@ module frame_mount(corner_brace=false,enclosure=true)
   if (corner_brace) { 
     if (enclosure) {
       translate([-16,-1.4,12])rotate([-90,180,0])
-        corner_brace();
+        corner_brace(nosupport);
     } else {
       translate([-13,-1.4,12])rotate([-90,180,0])
-        corner_brace();
+        corner_brace(nosupport);
     }
   }
 }
 
-frame_mount(corner_brace=true,enclosure=true);
+frame_mount(corner_brace=false,enclosure=false,nosupport=true);
