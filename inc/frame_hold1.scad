@@ -1,5 +1,5 @@
-use<inc/functions.scad>
-include<inc/arduino.scad>
+use<functions.scad>
+include<arduino.scad>
 
 module base_plate() {
   translate([11.1,-1.4,-11.5])rotate([-90,0,0])
@@ -86,4 +86,3 @@ module frame_mount(corner_brace=false,enclosure=true,nosupport=false)
   }
 }
 
-frame_mount(corner_brace=false,enclosure=false,nosupport=true);
