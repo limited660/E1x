@@ -47,10 +47,10 @@ lm12uu=[12, 21, 30];
 
 //rotary bearings
 // format is IDxODxL
-623xx=[3, 10, 4];
+xx623=[3, 10, 4];
 MF204=[4, 10, 4];
 MF126=[6, 12, 4];
-rotaryBearing=MF126;// for readability(can be changed if other bearings are used
+rotaryBearing=xx623;// for readability(can be changed if other bearings are used
 
 //====================//
 // Basic Config Items //
