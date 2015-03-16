@@ -28,7 +28,7 @@ m4_nut_diameter_horizontal = 8.15;
 
 m3_diameter = 3.6;
 //iso4032 says 6.01
-m3_nut_diameter = 5.3;
+m3_nut_diameter = 5.5; // maximum tolerance
 m3_nut_diameter_horizontal = 6.8;
 m3_washer_diameter = 6.9;
 
