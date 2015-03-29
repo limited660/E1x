@@ -21,6 +21,12 @@ m8_diameter = 9;
 //iso4032 says Width across corners = 14.38
 m8_nut_diameter = 14.1;
 
+m5_diameter = 5.7;
+//iso5032 says 7.66
+m5_nut_diameter = 10;
+m5_nut_diameter_horizontal = 10.15;
+
+
 m4_diameter = 4.7;
 //iso4032 says 7.66
 m4_nut_diameter = 7.6;
@@ -28,7 +34,7 @@ m4_nut_diameter_horizontal = 8.15;
 
 m3_diameter = 3.6;
 //iso4032 says 6.01
-m3_nut_diameter = 5.3;
+m3_nut_diameter = 5.5; // maximum tolerance
 m3_nut_diameter_horizontal = 6.8;
 m3_washer_diameter = 6.9;
 
