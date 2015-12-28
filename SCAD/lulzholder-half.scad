@@ -1,6 +1,6 @@
 // Belt holder alternative for Lulzbot's 300x300 y carriage. 
-
-height=6; // 
+// should be a 26mm separation between the top of the belt and the bottom of the chassis.
+height=9; // 
 hole_separation=49;
 
 difference() {
